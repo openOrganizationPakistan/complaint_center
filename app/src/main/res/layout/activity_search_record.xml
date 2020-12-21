@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".SearchRecord">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		>
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:padding="50dp"
+			>
+			
+			<EditText
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="Record Number"
+				android:layout_margin="25dp"
+				android:textSize="24dp"
+				android:textAlignment="center"
+				android:background="@drawable/bg_round"
+				android:id="@+id/txtRecNum"/>
+			
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="Total records"
+				android:layout_margin="25dp"
+				android:textSize="24dp"
+				android:textAlignment="center"
+				android:background="@drawable/bg_round"
+				android:id="@+id/txtRecords"/>
+			
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="25dp"
+				android:hint="Date"
+				android:textSize="24dp"
+				android:textAlignment="center"
+				android:background="@drawable/bg_round"
+				android:id="@+id/txtDate"/>
+			
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="Title"
+				android:layout_margin="25dp"
+				android:textSize="24dp"
+				android:textAlignment="center"
+				android:background="@drawable/bg_round"
+				android:id="@+id/txtTitle"/>
+			
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textSize="24dp"
+				android:textAlignment="center"
+				android:background="@drawable/bg_round"
+				android:layout_margin="25dp"
+				android:hint="Issue Detail"
+				android:id="@+id/txtIssue"/>
+			
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textSize="24dp"
+				android:textAlignment="center"
+				android:background="@drawable/bg_round"
+				android:layout_margin="25dp"
+				android:text="search"
+				android:id="@+id/btnSearch"/>
+			
+		</LinearLayout>
+		
+	</ScrollView>
+	
+	
+</RelativeLayout>

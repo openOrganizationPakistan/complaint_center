@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity"
+	android:padding="25dp">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true">
+		
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="25dp">
+			
+			<EditText
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="Email"
+				android:textSize="24dp"
+				android:id="@+id/txtEmail"
+				android:textAlignment="center"
+				android:background="@drawable/bg_round"
+				android:layout_margin="25dp"/>
+			
+			<EditText
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="password"
+				android:layout_below="@id/txtEmail"
+				android:id="@+id/txtPsd"
+				android:inputType="textPassword"
+				android:textSize="24dp"
+				android:textAlignment="center"
+				android:background="@drawable/bg_round"
+				android:layout_margin="25dp"/>
+			
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/txtPsd"
+				android:layout_margin="25dp"
+				android:id="@+id/btnLogin"
+				android:textAlignment="center"
+				android:background="@drawable/bg_round"
+				android:text="Login"/>
+			
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="credit"
+				android:layout_alignParentBottom="true"
+				android:layout_alignParentEnd="true"
+				android:layout_marginVertical="50dp"
+				android:layout_marginHorizontal="25dp"
+				android:textAlignment="center"
+				android:background="@drawable/bg_round"
+				android:layout_below="@+id/btnLogin"
+				android:id="@+id/btnCredits"/>
+			
+		</RelativeLayout>
+		
+		
+		
+	</ScrollView>
+<!--	-->
+<!--	<Button-->
+<!--		android:layout_width="wrap_content"-->
+<!--		android:layout_height="wrap_content"-->
+<!--		android:text="credit"-->
+<!--		android:layout_alignParentBottom="true"-->
+<!--		android:layout_alignParentEnd="true"-->
+<!--		android:layout_margin="50dp"-->
+<!--		android:id="@+id/btnCredits"/>-->
+	
+</RelativeLayout>

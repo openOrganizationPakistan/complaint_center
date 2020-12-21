@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".Report"
+	android:padding="25dp">
+	
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		>
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:padding="25dp">
+			
+			<EditText
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="Registration Number"
+				android:layout_marginVertical="25dp"
+				android:id="@+id/txtRegNum"
+				android:focusableInTouchMode="true"
+				android:focusable="true"
+				android:textSize="24dp"
+				android:textAlignment="center"
+				android:background="@drawable/bg_round"
+				android:capitalize="characters"
+				android:inputType="text"/>
+			
+			<EditText
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginVertical="25dp"
+				android:hint="Roll Number"
+				android:id="@+id/txtRollNum"
+				android:focusableInTouchMode="true"
+				android:focusable="true"
+				android:capitalize="characters"
+				android:textSize="24dp"
+				android:textAlignment="center"
+				android:background="@drawable/bg_round"
+				android:inputType="text"/>
+			
+			<EditText
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="Title Your Issue"
+				android:layout_marginVertical="25dp"
+				android:id="@+id/txtTitle"
+				android:focusableInTouchMode="true"
+				android:focusable="true"
+				android:inputType="text"
+				android:textSize="24dp"
+				android:textAlignment="center"
+				android:background="@drawable/bg_round"
+				android:capitalize="characters"/>
+			
+			<EditText
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="State Your Issue"
+				android:layout_marginVertical="25dp"
+				android:id="@+id/txtProblem"
+				android:focusableInTouchMode="true"
+				android:focusable="true"
+				android:textSize="24dp"
+				android:textAlignment="center"
+				android:background="@drawable/bg_round"
+				android:inputType="text"
+				android:capitalize="characters"/>
+			
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginVertical="25dp"
+				android:text="report"
+				android:textSize="24dp"
+				android:textAlignment="center"
+				android:background="@drawable/bg_round"
+				android:id="@+id/btnSendReport"/>
+			
+		</LinearLayout>
+		
+	</ScrollView>
+
+</RelativeLayout>
