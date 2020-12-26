@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".Credit"
+	android:padding="25dp">
+	
+	
+	<RelativeLayout
+		android:layout_width="504dp"
+		android:layout_centerHorizontal="true"
+		android:layout_height="match_parent"
+		android:padding="15dp">
+		
+		
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:padding="20dp">
+			
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:textSize="24dp"
+				android:textColorHint="@color/black"
+				android:textColor="@color/green"
+				android:textStyle="bold"
+				
+				android:shadowDx="1.2"
+				android:shadowDy="1.2"
+				android:shadowColor="@color/black"
+				android:shadowRadius="1.2"
+				
+				android:text="-------------------------\nAbdul Rauf\n31202-1895476-3\nReg# 17PBR03524\nRoll# BO460872\nPhn# 03042816024\n-------------------------"
+				android:id="@+id/txtCredit"/>
+			
+			<!--		\nTeam Members:\n******************\nM Asif Moeen\n31103-2004046-9 \n\nM Nouman Shahid\n \n******************\n-->
+		
+		</ScrollView>
+	
+	</RelativeLayout>
+
+</RelativeLayout>

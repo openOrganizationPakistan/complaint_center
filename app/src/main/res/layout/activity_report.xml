@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".Report"
+	android:padding="25dp">
+	
+	<LinearLayout
+		android:layout_width="504dp"
+		android:layout_centerHorizontal="true"
+		android:gravity="center"
+		android:layout_height="match_parent">
+		
+<!--		<include layout="@layout/logo"/>-->
+		
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			>
+			
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:padding="25dp">
+				
+				<EditText
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="Registration Number"
+					android:layout_marginVertical="25dp"
+					android:id="@+id/txtRegNum"
+					android:textSize="24dp"
+					android:textStyle="bold"
+					android:maxLines="1"
+					
+					android:shadowDx="1.2"
+					android:shadowDy="1.2"
+					android:shadowColor="@color/black"
+					android:shadowRadius="1.2
+"
+					android:maxLength="10"
+					android:textAlignment="center"
+					android:background="@drawable/bg_round"
+					android:capitalize="characters"
+					android:inputType="text"/>
+				
+				<EditText
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginVertical="25dp"
+					android:hint="Roll Number"
+					android:maxLength="8"
+					android:id="@+id/txtRollNum"
+					
+					android:shadowDx="1.2"
+					android:shadowDy="1.2"
+					android:shadowColor="@color/black"
+					android:shadowRadius="1.2
+"
+					android:maxLines="1"
+					android:capitalize="characters"
+					android:textSize="24dp"
+					android:textStyle="bold"
+					android:textAlignment="center"
+					android:background="@drawable/bg_round"
+					android:inputType="text"/>
+				
+				<EditText
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="Title Your Issue"
+					android:layout_marginVertical="25dp"
+					android:id="@+id/txtTitle"
+					android:inputType="textEmailSubject"
+					android:textSize="24dp"
+					
+					android:shadowDx="1.2"
+					android:shadowDy="1.2"
+					android:shadowColor="@color/black"
+					android:shadowRadius="1.2
+"
+					android:textStyle="bold"
+					android:maxLines="2"
+					android:textAlignment="center"
+					android:background="@drawable/bg_round"
+					android:capitalize="characters"/>
+				
+				<EditText
+					android:scrollbarAlwaysDrawVerticalTrack="true"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="State Your Issue"
+					android:layout_marginVertical="25dp"
+					android:id="@+id/txtProblem"
+					android:textSize="24dp"
+					
+					android:shadowDx="1.2"
+					android:shadowDy="1.2"
+					android:shadowColor="@color/black"
+					android:shadowRadius="1.2
+"
+					android:maxLines="4"
+					android:textAlignment="center"
+					android:background="@drawable/bg_round"
+					android:inputType="textMultiLine"
+					android:capitalize="characters"/>
+				
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginVertical="25dp"
+					android:text="report"
+					android:textSize="24dp"
+					android:textAlignment="center"
+					android:background="@drawable/bg_btn_round"
+					android:id="@+id/btnSendReport"/>
+			
+			</LinearLayout>
+		
+		</ScrollView>
+	
+	</LinearLayout>
+
+</RelativeLayout>

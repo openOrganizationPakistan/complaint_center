@@ -1,0 +1,4 @@
+#Sat Dec 26 13:54:13 PKT 2020
+base.0=/home/abdulrauf/AndroidStudioProjects/AIOUComplaintCenter/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".OperationSelection">
+	
+	<LinearLayout
+		android:layout_width="504dp"
+		android:gravity="center"
+		android:layout_centerHorizontal="true"
+		android:layout_height="match_parent">
+		
+		
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center">
+			
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:padding="25dp">
+				
+				<include layout="@layout/logo"/>
+				
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="report problem"
+					android:id="@+id/btnReport"
+					android:textSize="24dp"
+					
+					android:textAlignment="center"
+					android:background="@drawable/bg_btn_round"
+					android:layout_margin="25dp"/>
+				
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="search records"
+					android:textSize="24dp"
+					
+					android:textAlignment="center"
+					android:background="@drawable/bg_btn_round"
+					android:id="@+id/btnSearchRecords"
+					android:layout_margin="25dp"/>
+				
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:textSize="24dp"
+					android:textAlignment="center"
+					android:background="@drawable/bg_btn_round"
+					android:layout_margin="25dp"
+					android:text="sign out"
+					android:id="@+id/btnSignOut"/>
+			
+			</LinearLayout>
+		
+		</ScrollView>
+	
+	</LinearLayout>
+
+</RelativeLayout>

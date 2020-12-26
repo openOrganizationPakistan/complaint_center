@@ -1,0 +1,31 @@
+com/example/aioucomplaintcenter/BuildConfig.java
+ com.example.aioucomplaintcenter.BuildConfig
+com/example/aioucomplaintcenter/SearchRecord.java
+ com.example.aioucomplaintcenter.SearchRecord
+ com.example.aioucomplaintcenter.SearchRecord$1
+ com.example.aioucomplaintcenter.SearchRecord$1$1
+ com.example.aioucomplaintcenter.SearchRecord$1$1$1
+com/example/aioucomplaintcenter/DataObj.java
+ com.example.aioucomplaintcenter.DataObj
+com/example/aioucomplaintcenter/MainActivity.java
+ com.example.aioucomplaintcenter.MainActivity
+ com.example.aioucomplaintcenter.MainActivity$1
+ com.example.aioucomplaintcenter.MainActivity$2
+ com.example.aioucomplaintcenter.MainActivity$3
+com/example/aioucomplaintcenter/JavaMailAPI.java
+ com.example.aioucomplaintcenter.JavaMailAPI
+ com.example.aioucomplaintcenter.JavaMailAPI$1
+com/example/aioucomplaintcenter/Report.java
+ com.example.aioucomplaintcenter.Report
+ com.example.aioucomplaintcenter.Report$1
+ com.example.aioucomplaintcenter.Report$1$1
+ com.example.aioucomplaintcenter.Report$1$1$1
+com/example/aioucomplaintcenter/OperationSelection.java
+ com.example.aioucomplaintcenter.OperationSelection
+ com.example.aioucomplaintcenter.OperationSelection$1
+ com.example.aioucomplaintcenter.OperationSelection$2
+ com.example.aioucomplaintcenter.OperationSelection$3
+com/example/aioucomplaintcenter/Utils.java
+ com.example.aioucomplaintcenter.Utils
+com/example/aioucomplaintcenter/Credit.java
+ com.example.aioucomplaintcenter.Credit
