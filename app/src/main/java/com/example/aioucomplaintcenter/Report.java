@@ -20,21 +20,24 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.Date;
 
 public class Report extends AppCompatActivity {
-	private EditText txtRegNum;
-	private EditText txtRollNum;
-	private EditText txtTitle;
-	private EditText txtProblem;
+	private EditText txtRegNum
+			,txtRollNum
+			,txtTitle
+			,txtProblem
+			;
 	
 	private Button btnSendReport;
 	
-	private String strRegNum;
-	private String strRollNum;
-	private String strTitle;
-	private String strProblem;
-	private String strPhnNumber;
-	private String strStdName;
-	private String strMailTo;
-	
+	private String strRegNum
+			,strRollNum
+			,strTitle
+			,strProblem
+			,strPhnNumber
+			,strStdName
+			,strMailTo
+			;
+
+	private byte issueIndex;
 	
 	private FirebaseDatabase database;
 	private DatabaseReference dbRef;
@@ -116,11 +119,12 @@ public class Report extends AppCompatActivity {
 												public void onDataChange(@NonNull DataSnapshot snapshot) {
 													
 													long instance = snapshot.getChildrenCount();
-													
+
+													issueIndex = (byte) (instance +1);
 													
 													sendEmail();
 													
-													issueRef.child(String.valueOf(instance + 1)).setValue(dataObj);
+													issueRef.child(String.valueOf(issueIndex)).setValue(dataObj);
 												
 												}
 												
@@ -176,7 +180,7 @@ public class Report extends AppCompatActivity {
 	
 	private void sendEmail() {
 		
-		JavaMailAPI javaMailAPI = new JavaMailAPI(this, strMailTo , strTitle,
+		JavaMailAPI javaMailAPI = new JavaMailAPI(this, strMailTo , strRollNum + "-" + issueIndex,
 				"Your student "+strStdName + "\nwith email "
 				+currentUser.getEmail() + "\nwith user id in database "
 				+ currentUser.getUid()

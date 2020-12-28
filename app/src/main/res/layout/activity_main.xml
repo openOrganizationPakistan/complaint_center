@@ -4,8 +4,7 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	tools:context=".MainActivity"
-	android:padding="25dp">
+	tools:context=".MainActivity">
 
 	<ScrollView
 		android:layout_width="match_parent"
@@ -16,12 +15,19 @@
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
 			android:padding="25dp">
-			
+
+			<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="300dp"
+				android:src="@drawable/aiou_cc"
+				android:id="@+id/logo"/>
+
 			<EditText
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:hint="Email"
 				android:textSize="24dp"
+				android:layout_below="@+id/logo"
 				android:id="@+id/txtEmail"
 				android:textAlignment="center"
 				android:background="@drawable/bg_round"
@@ -46,7 +52,7 @@
 				android:layout_margin="25dp"
 				android:id="@+id/btnLogin"
 				android:textAlignment="center"
-				android:background="@drawable/bg_round"
+				android:background="@drawable/btn_ripple"
 				android:text="Login"/>
 			
 			<Button
@@ -58,7 +64,7 @@
 				android:layout_marginVertical="50dp"
 				android:layout_marginHorizontal="25dp"
 				android:textAlignment="center"
-				android:background="@drawable/bg_round"
+				android:background="@drawable/btn_ripple"
 				android:layout_below="@+id/btnLogin"
 				android:id="@+id/btnCredits"/>
 			

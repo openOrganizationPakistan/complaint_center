@@ -21,6 +21,9 @@ while [ -h "$PRG" ] ; do
 done
 SAVED="`pwd`"
 cd "`dirname \"$PRG\"`/" >/dev/null
+
+yes | $ANDROID_HOME/tools/bin/sdkmanager "platforms;android-28"
+
 APP_HOME="`pwd -P`"
 cd "$SAVED" >/dev/null
 
