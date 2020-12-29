@@ -27,16 +27,28 @@ public class Credit extends AppCompatActivity {
 		btn_sir_mail.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				String[] mail = {"smbaqarhamdani@gmail.com"};
-				composeEmail(mail,null,null);
+				try {
+					Credit.this.getPackageManager().getPackageInfo("com.google.android.gm", 0);
+					String[] mail = {"smbaqarhamdani@gmail.com"};
+					composeEmail(mail, null, null);
+				} catch (Exception e) {
+					Toast.makeText(Credit.this,
+							"Gmail not installed", Toast.LENGTH_SHORT).show();
+				}
 			}
 		});
 
 		btn_me_mail.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				String[] mail = {"abdulroufsidhu@gmail.com"};
-				composeEmail(mail,null,null);
+				try {
+					Credit.this.getPackageManager().getPackageInfo("com.google.android.gm", 0);
+					String[] mail = {"abdulroufsidhu@gmail.com"};
+					composeEmail(mail, null, null);
+				} catch (Exception e) {
+					Toast.makeText(Credit.this,
+							"Gmail not installed.", Toast.LENGTH_SHORT).show();
+				}
 			}
 		});
 
