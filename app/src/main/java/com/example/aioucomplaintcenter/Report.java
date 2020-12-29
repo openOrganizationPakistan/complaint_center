@@ -60,7 +60,7 @@ public class Report extends AppCompatActivity {
 		mAuth = FirebaseAuth.getInstance();
 		currentUser = mAuth.getCurrentUser();
 		
-		dbRef = database.getReference(currentUser.getUid());
+		dbRef = database.getReference("users/"+currentUser.getUid());
 		
 		callFindViewById();
 		
@@ -89,13 +89,13 @@ public class Report extends AppCompatActivity {
 									try {
 										switch (data.getKey()) {
 											
-											case "phn number": {
+											case "phn_number": {
 												strPhnNumber = data.getValue().toString().trim();
-											} case "reg number": {
+											} case "reg_number": {
 												if (data.getValue().toString().equals(strRegNum.toLowerCase())) {
 													regCnfrm = true;
 												}
-											} case "roll number": {
+											} case "roll_number": {
 												if (data.getValue().toString().equals(strRollNum.toLowerCase())) {
 													rollCnfrm = true;
 												}
@@ -180,7 +180,7 @@ public class Report extends AppCompatActivity {
 	
 	private void sendEmail() {
 		
-		JavaMailAPI javaMailAPI = new JavaMailAPI(this, strMailTo , strRollNum + "-" + issueIndex,
+		JavaMailAPI javaMailAPI = new JavaMailAPI(this, strMailTo , strRollNum + "-" + issueIndex + "(" + strTitle + ")",
 				"Your student "+strStdName + "\nwith email "
 				+currentUser.getEmail() + "\nwith user id in database "
 				+ currentUser.getUid()

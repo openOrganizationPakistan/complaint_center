@@ -28,18 +28,20 @@ public class SearchRecord extends AppCompatActivity {
 	
 	private EditText txtRecNum;
 	
-	private TextView txtDate;
-	private TextView txtTitle;
-	private TextView txtIssue;
-	private TextView txtRecords;
+	private TextView txtDate
+			,txtTitle
+			,txtIssue
+			,txtRecords
+			;
 	
 	private Button btnSearch;
 	
-	private String strDate;
-	private String strTitle;
-	private String strIssue;
-	private String strRecords;
-	private String strRecNum;
+	private String strDate
+			,strTitle
+			,strIssue
+			,strRecords
+			,strRecNum
+			;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +53,7 @@ public class SearchRecord extends AppCompatActivity {
 		database = FirebaseDatabase.getInstance();
 		mAuth = FirebaseAuth.getInstance();
 		currentUser = mAuth.getCurrentUser();
-		dbRef = database.getReference(currentUser.getUid() + "/issues");
+		dbRef = database.getReference("users/" + currentUser.getUid() + "/issues");
 		
 		btnSearch.setOnClickListener(new View.OnClickListener() {
 			@Override
