@@ -53,6 +53,10 @@ public class OperationSelection extends AppCompatActivity {
 		btnSearchRecords = findViewById(R.id.btnSearchRecords);
 		btnSignOut = findViewById(R.id.btnSignOut);
 	}
-	
-	
+
+	@Override
+	public void onBackPressed() {
+		finishAffinity();
+		finish();
+	}
 }

@@ -20,7 +20,7 @@
 		<activity android:name=".SearchRecord"></activity>
 		<activity android:name=".Report" />
 		<activity android:name=".Credit" />
-		<activity android:name=".OperationSelection" />
+		<activity android:name=".OperationSelection"/>
 		<activity android:name=".MainActivity"
 			android:exported="true">
 			<intent-filter>
