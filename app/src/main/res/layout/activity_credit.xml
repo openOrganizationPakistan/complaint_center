@@ -1,199 +1,241 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:orientation="horizontal"
 	tools:context=".Credit">
-
-
-
-
-	<HorizontalScrollView
+	
+	<LinearLayout
 		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_gravity="center">
-
-		<!--		<TextView-->
-		<!--			android:layout_width="match_parent"-->
-		<!--			android:layout_height="match_parent"-->
-		<!--			android:textSize="24dp"-->
-		<!--			android:textStyle="bold"-->
-		<!--			android:text="&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;\nAbdul Rauf\nabdulroufsidhu@gmail.com\n&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;"-->
-		<!--			android:id="@+id/txtCredit"/>-->
-
-		<TableLayout
+		android:layout_height="match_parent"
+		android:layout_gravity="center"
+		android:orientation="vertical">
+		
+		<HorizontalScrollView
 			android:layout_width="match_parent"
-			android:layout_height="match_parent"
-			android:background="@drawable/bg_round"
-			android:layout_margin="2dp">
-
-			<TableRow
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:background="@drawable/bg_round"
-				android:padding="1dp"
-				android:layout_margin="2dp">
-
-				<TextView
-					android:fontFamily="serif-monospace"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:background="@drawable/bg_round"
-					android:text="Name"
-					android:textAlignment="center"
-					android:textSize="24dp"
-					android:textStyle="bold"
-					android:padding="1dp"
-					android:layout_margin="2dp"/>
-
-				<TextView
-					android:fontFamily="serif-monospace"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:background="@drawable/bg_round"
-					android:text="Designation"
-					android:textAlignment="center"
-					android:textSize="24dp"
-					android:textStyle="bold"
-					android:padding="1dp"
-					android:layout_margin="2dp"/>
-
-				<TextView
-					android:fontFamily="serif-monospace"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:background="@drawable/bg_round"
-					android:text="Contact"
-					android:textAlignment="center"
-					android:textSize="24dp"
-					android:textStyle="bold"
-					android:padding="1dp"
-					android:layout_margin="2dp"/>
-
-				<TextView
-					android:fontFamily="serif-monospace"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:background="@drawable/bg_round"
-					android:text="Picture"
-					android:textAlignment="center"
-					android:textSize="24dp"
-					android:textStyle="bold"
-					android:padding="1dp"
-					android:layout_margin="2dp"/>
-
-			</TableRow>
-
-			<TableRow
-				android:layout_width="wrap_content"
-
-				android:layout_height="120dp"
-				android:background="@drawable/bg_round"
-				android:padding="1dp"
-				android:layout_margin="2dp">
-
-				<TextView
-					android:fontFamily="serif-monospace"
-					android:layout_width="1dp"
-					android:textStyle="italic"
-					android:layout_height="120dp"
-					android:background="@drawable/bg_round"
-					android:text="Syed Baqar Hamdani"
-					android:textAlignment="center"
-					android:textSize="24dp"
-					android:padding="1dp"
-					android:layout_margin="2dp"/>
-
-				<TextView
-					android:fontFamily="serif-monospace"
-					android:layout_width="1dp"
-					android:textStyle="italic"
-					android:layout_height="120dp"
-					android:background="@drawable/bg_round"
-					android:text="Assistant Regional Director AIOU"
-					android:textAlignment="center"
-					android:textSize="24dp"
-					android:padding="1dp"
-					android:layout_margin="2dp"/>
-
-				<TextView
-					android:fontFamily="serif-monospace"
-					android:layout_width="1dp"
-					android:textStyle="italic"
-					android:layout_height="120dp"
-					android:background="@drawable/bg_round"
-					android:text="baqar.hussain@aiou.edu.pk"
-					android:textAlignment="center"
-					android:textSize="24dp"
-					android:padding="1dp"
-					android:layout_margin="2dp"/>
-
-				<ImageView
-					android:layout_width="1dp"
-					android:layout_height="120dp"
-					android:src="@drawable/me"
-					android:padding="1dp"
-					android:layout_margin="2dp"/>
-
-			</TableRow>
-
-			<TableRow
+			android:layout_height="wrap_content">
+			
+			<!--		<TextView-->
+			<!--			android:layout_width="match_parent"-->
+			<!--			android:layout_height="match_parent"-->
+			<!--			android:textSize="24dp"-->
+			<!--			android:textStyle="bold"-->
+			<!--			android:text="&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;\nAbdul Rauf\nabdulroufsidhu@gmail.com\n&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;"-->
+			<!--			android:id="@+id/txtCredit"/>-->
+			
+			<TableLayout
 				android:layout_width="match_parent"
-
 				android:layout_height="match_parent"
 				android:background="@drawable/bg_round"
-				android:padding="1dp"
 				android:layout_margin="2dp">
-
-				<TextView
-					android:fontFamily="serif-monospace"
+				
+				<TableRow
 					android:layout_width="wrap_content"
-					android:layout_height="120dp"
-					android:layout_margin="2dp"
+					android:layout_height="wrap_content"
 					android:background="@drawable/bg_round"
 					android:padding="1dp"
-					android:textStyle="italic"
-					android:text="Abdul Rauf"
-					android:textAlignment="center"
-					android:textSize="24dp" />
-
-				<TextView
-					android:fontFamily="serif-monospace"
+					android:layout_margin="2dp">
+					
+					<TextView
+						android:fontFamily="serif-monospace"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:background="@drawable/bg_round"
+						android:text="Name"
+						android:textAlignment="center"
+						android:textSize="24dp"
+						android:textStyle="bold"
+						android:padding="1dp"
+						android:layout_margin="2dp"/>
+					
+					<TextView
+						android:fontFamily="serif-monospace"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:background="@drawable/bg_round"
+						android:text="Designation"
+						android:textAlignment="center"
+						android:textSize="24dp"
+						android:textStyle="bold"
+						android:padding="1dp"
+						android:layout_margin="2dp"/>
+					
+					<TextView
+						android:fontFamily="serif-monospace"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:background="@drawable/bg_round"
+						android:text="Contact"
+						android:textAlignment="center"
+						android:textSize="24dp"
+						android:textStyle="bold"
+						android:padding="1dp"
+						android:layout_margin="2dp"/>
+					
+					<TextView
+						android:fontFamily="serif-monospace"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:background="@drawable/bg_round"
+						android:text="Picture"
+						android:textAlignment="center"
+						android:textSize="24dp"
+						android:textStyle="bold"
+						android:padding="1dp"
+						android:layout_margin="2dp"/>
+				
+				</TableRow>
+				
+				<TableRow
 					android:layout_width="wrap_content"
+					
 					android:layout_height="120dp"
 					android:background="@drawable/bg_round"
-					android:text="Student"
-					android:textAlignment="center"
-					android:textSize="24dp"
 					android:padding="1dp"
-					android:textStyle="italic"
-					android:layout_margin="2dp"/>
-
-				<TextView
-					android:fontFamily="serif-monospace"
-					android:layout_width="1dp"
-					android:layout_height="120dp"
+					android:layout_margin="2dp">
+					
+					<TextView
+						android:fontFamily="serif-monospace"
+						android:layout_width="1dp"
+						android:textStyle="italic"
+						android:layout_height="120dp"
+						android:background="@drawable/bg_round"
+						android:text="Syed Baqar Hamdani"
+						android:textAlignment="center"
+						android:textSize="24dp"
+						android:padding="1dp"
+						android:layout_margin="2dp"/>
+					
+					<TextView
+						android:fontFamily="serif-monospace"
+						android:layout_width="1dp"
+						android:textStyle="italic"
+						android:layout_height="120dp"
+						android:background="@drawable/bg_round"
+						android:text="Assistant Regional Director AIOU"
+						android:textAlignment="center"
+						android:textSize="24dp"
+						android:padding="1dp"
+						android:layout_margin="2dp"/>
+					
+					<LinearLayout
+						android:layout_height="120dp"
+						android:layout_width="1dp"
+						android:orientation="vertical">
+						
+						<ImageButton
+							android:id="@+id/btn_sir_mail"
+							android:layout_width="60dp"
+							android:layout_height="70dp"
+							android:background="@drawable/btn_ripple"
+							android:scaleType="center"
+							android:src="@drawable/g_mail_logo" />
+						
+						
+						
+					</LinearLayout>
+					
+					
+					
+<!--					<TextView-->
+<!--						android:fontFamily="serif-monospace"-->
+<!--						android:layout_width="1dp"-->
+<!--						android:textStyle="italic"-->
+<!--						android:layout_height="120dp"-->
+<!--						android:background="@drawable/bg_round"-->
+<!--						android:text="baqar.hussain@aiou.edu.pk"-->
+<!--						android:textAlignment="center"-->
+<!--						android:textSize="24dp"-->
+<!--						android:padding="1dp"-->
+<!--						android:layout_margin="2dp"/>-->
+					
+					<ImageView
+						android:layout_width="1dp"
+						android:layout_height="120dp"
+						android:src="@drawable/sir"
+						android:padding="1dp"
+						android:layout_margin="2dp"/>
+				
+				</TableRow>
+				
+				<TableRow
+					android:layout_width="match_parent"
+					
+					android:layout_height="match_parent"
 					android:background="@drawable/bg_round"
-					android:text="abdulroufsidhu@gmail.com"
-					android:textAlignment="center"
-					android:textSize="24dp"
 					android:padding="1dp"
-					android:textStyle="italic"
-					android:layout_margin="2dp"/>
+					android:layout_margin="2dp">
+					
+					<TextView
+						android:fontFamily="serif-monospace"
+						android:layout_width="wrap_content"
+						android:layout_height="120dp"
+						android:layout_margin="2dp"
+						android:background="@drawable/bg_round"
+						android:padding="1dp"
+						android:textStyle="italic"
+						android:text="Abdul Rauf"
+						android:textAlignment="center"
+						android:textSize="24dp" />
+					
+					<TextView
+						android:fontFamily="serif-monospace"
+						android:layout_width="wrap_content"
+						android:layout_height="120dp"
+						android:background="@drawable/bg_round"
+						android:text="Student"
+						android:textAlignment="center"
+						android:textSize="24dp"
+						android:padding="1dp"
+						android:textStyle="italic"
+						android:layout_margin="2dp"/>
+					
+					<LinearLayout
+						android:layout_height="120dp"
+						android:layout_width="1dp"
+						android:orientation="vertical">
+						
+						<ImageButton
+							android:id="@+id/btn_me_mail"
+							android:layout_width="60dp"
+							android:layout_height="70dp"
+							android:background="@drawable/btn_ripple"
+							android:scaleType="center"
+							android:src="@drawable/g_mail_logo" />
+						
+						<ImageButton
+							android:id="@+id/btn_me_fb"
+							android:layout_width="60dp"
+							android:layout_height="70dp"
+							android:background="@drawable/btn_ripple"
+							android:src="@drawable/fb_logo" />
+					
+					
+					</LinearLayout>
+					
+					<ImageView
+						android:layout_width="1dp"
+						android:layout_height="120dp"
+						android:src="@drawable/me"
+						android:padding="1dp"
+						android:layout_margin="2dp"/>
+				
+				</TableRow>
+			
+			</TableLayout>
+		
+		
+		</HorizontalScrollView>
+		
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/copyrights"
+			android:layout_marginTop="25dp"
+			android:textAlignment="center"/>
+	
+	</LinearLayout>
 
-				<ImageView
-					android:layout_width="1dp"
-					android:layout_height="120dp"
-					android:src="@drawable/me"
-					android:padding="1dp"
-					android:layout_margin="2dp"/>
 
-			</TableRow>
-
-		</TableLayout>
-
-
-	</HorizontalScrollView>
-
-</LinearLayout>
+</ScrollView>

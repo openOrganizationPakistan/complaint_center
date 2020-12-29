@@ -21,7 +21,8 @@
 		<activity android:name=".Report" />
 		<activity android:name=".Credit" />
 		<activity android:name=".OperationSelection" />
-		<activity android:name=".MainActivity">
+		<activity android:name=".MainActivity"
+			android:exported="true">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
 				

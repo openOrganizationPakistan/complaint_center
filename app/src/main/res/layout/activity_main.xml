@@ -19,7 +19,7 @@
 			<ImageView
 				android:layout_width="match_parent"
 				android:layout_height="300dp"
-				android:src="@drawable/aiou_cc"
+				android:src="@drawable/aiou_cc_fn"
 				android:id="@+id/logo"/>
 
 			<EditText
