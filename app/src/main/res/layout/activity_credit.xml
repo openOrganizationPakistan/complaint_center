@@ -122,13 +122,15 @@
 					<LinearLayout
 						android:layout_height="120dp"
 						android:layout_width="1dp"
+						android:layout_marginTop="2dp"
+						android:background="@drawable/bg_round"
 						android:orientation="vertical">
 						
 						<ImageButton
 							android:id="@+id/btn_sir_mail"
-							android:layout_width="30dp"
+							android:layout_width="35dp"
 							android:layout_margin="5dp"
-							android:layout_height="70dp"
+							android:layout_height="110dp"
 							android:background="@drawable/btn_ripple"
 							android:scaleType="center"
 							android:src="@drawable/g_mail_logo" />
@@ -195,12 +197,14 @@
 					<LinearLayout
 						android:layout_height="120dp"
 						android:layout_width="1dp"
+						android:layout_marginTop="2dp"
+						android:background="@drawable/bg_round"
 						android:orientation="horizontal">
 						
 						<ImageButton
 							android:id="@+id/btn_me_mail"
-							android:layout_width="30dp"
-							android:layout_height="70dp"
+							android:layout_width="35dp"
+							android:layout_height="110dp"
 							android:layout_margin="5dp"
 							android:background="@drawable/btn_ripple"
 							android:scaleType="center"
@@ -209,10 +213,11 @@
 						<ImageButton
 							android:id="@+id/btn_me_fb"
 							android:layout_width="30dp"
-							android:layout_height="70dp"
+							android:layout_height="110dp"
 							android:layout_margin="5dp"
 							android:background="@drawable/btn_ripple"
 							android:src="@drawable/fb_logo" />
+						
 					
 					
 					</LinearLayout>
