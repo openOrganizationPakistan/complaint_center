@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	tools:context=".MainActivity">
 
-	<ScrollView
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_centerInParent="true">
-		
-		<RelativeLayout
+		<LinearLayout
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:paddingHorizontal="25dp"
 			android:padding="25dp">
 
 			<ImageView
@@ -25,9 +21,10 @@
 			<EditText
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
+				android:inputType="textEmailAddress"
+				android:maxLines="2"
 				android:hint="Email"
 				android:textSize="24dp"
-				android:layout_below="@+id/logo"
 				android:id="@+id/txtEmail"
 				android:textAlignment="center"
 				android:background="@drawable/bg_round"
@@ -37,9 +34,9 @@
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:hint="password"
-				android:layout_below="@id/txtEmail"
 				android:id="@+id/txtPsd"
 				android:inputType="textPassword"
+				android:maxLines="1"
 				android:textSize="24dp"
 				android:textAlignment="center"
 				android:background="@drawable/bg_round"
@@ -48,39 +45,37 @@
 			<Button
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:layout_below="@id/txtPsd"
-				android:layout_margin="25dp"
+				android:layout_marginHorizontal="25dp"
+				android:layout_marginVertical="3dp"
 				android:id="@+id/btnLogin"
 				android:textAlignment="center"
 				android:background="@drawable/btn_ripple"
 				android:text="Login"/>
 			
 			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginHorizontal="25dp"
+				android:layout_marginVertical="3dp"
+				android:id="@+id/btn_reset"
+				android:textAlignment="center"
+				android:background="@drawable/btn_ripple"
+				android:text="Forgot Password"/>
+			
+			<Button
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:text="credit"
-				android:layout_alignParentBottom="true"
-				android:layout_alignParentEnd="true"
-				android:layout_marginVertical="50dp"
+				android:gravity="bottom"
+				android:layout_gravity="right"
+				android:layout_margin="25dp"
 				android:layout_marginHorizontal="25dp"
-				android:textAlignment="center"
 				android:background="@drawable/btn_ripple"
-				android:layout_below="@+id/btnLogin"
 				android:id="@+id/btnCredits"/>
 			
-		</RelativeLayout>
+		</LinearLayout>
 		
 		
 		
-	</ScrollView>
-<!--	-->
-<!--	<Button-->
-<!--		android:layout_width="wrap_content"-->
-<!--		android:layout_height="wrap_content"-->
-<!--		android:text="credit"-->
-<!--		android:layout_alignParentBottom="true"-->
-<!--		android:layout_alignParentEnd="true"-->
-<!--		android:layout_margin="50dp"-->
-<!--		android:id="@+id/btnCredits"/>-->
 	
-</RelativeLayout>
+</ScrollView>

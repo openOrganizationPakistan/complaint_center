@@ -30,20 +30,26 @@ public class MainActivity extends AppCompatActivity {
 	
 	private FirebaseAuth mAuth;
 	
-	private EditText txtEmail;
-	private EditText txtPsd;
+	private EditText txtEmail
+			,txtPsd
+			;
 	
-	private Button btnLogin;
-	private Button btnCredit;
+	private Button btnLogin
+			,btnCredit
+			,btnResetPassword
+			;
 	
-	private String strEmail;
-	private String strPsd;
+	private String strEmail
+			,strPsd
+			;
 	
-	private String fPsd;
-	private String fEmail;
+	private String fPsd
+			,fEmail
+			;
 	
-	private String efName;
-	private String pfName;
+	private String efName
+			,pfName
+			;
 	
 	@RequiresApi(api = Build.VERSION_CODES.O)
 	@Override
@@ -80,7 +86,14 @@ public class MainActivity extends AppCompatActivity {
 				btnLoginOnClickListener();
 			}
 		});
-	
+		
+		btnResetPassword.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(getApplicationContext(),ResetPassword.class));
+			}
+		});
+		
 	}
 	
 	@RequiresApi(api = Build.VERSION_CODES.O)
@@ -140,6 +153,8 @@ public class MainActivity extends AppCompatActivity {
 	private void callFindViewById() {
 		txtEmail = findViewById(R.id.txtEmail);
 		txtPsd = findViewById(R.id.txtPsd);
+		
+		btnResetPassword = findViewById(R.id.btn_reset);
 		
 		btnLogin = findViewById(R.id.btnLogin);
 		btnCredit = findViewById(R.id.btnCredits);
