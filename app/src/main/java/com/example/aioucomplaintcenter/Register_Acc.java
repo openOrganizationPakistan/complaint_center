@@ -150,6 +150,7 @@ public class Register_Acc extends AppCompatActivity {
 	public void onBackPressed() {
 		super.onBackPressed();
 		finish();
+		
 	}
 	
 	private void callFindViewById() {
