@@ -146,6 +146,12 @@ public class Register_Acc extends AppCompatActivity {
 		
 	}
 	
+	@Override
+	public void onBackPressed() {
+		super.onBackPressed();
+		finish();
+	}
+	
 	private void callFindViewById() {
 		eMail = findViewById(R.id.edtTxtEmail);
 		name = findViewById(R.id.edtTxtName);
