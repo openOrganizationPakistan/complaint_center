@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
 	private Button btnLogin
 			,btnCredit
 			,btnResetPassword
+			,btnRegAcc
 			;
 	
 	private String strEmail
@@ -78,6 +79,13 @@ public class MainActivity extends AppCompatActivity {
 //
 //			sighnIn(fEmail,fPsd);
 //		}
+		
+		btnRegAcc.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(getApplicationContext(),Register_Acc.class));
+			}
+		});
 		
 		btnLogin.setOnClickListener(new View.OnClickListener() {
 			@RequiresApi(api = Build.VERSION_CODES.O)
@@ -158,6 +166,7 @@ public class MainActivity extends AppCompatActivity {
 		
 		btnLogin = findViewById(R.id.btnLogin);
 		btnCredit = findViewById(R.id.btnCredits);
+		btnRegAcc = findViewById(R.id.btn_register);
 	}
 	
 	public static void writeToFile(String fileName, String lines) {

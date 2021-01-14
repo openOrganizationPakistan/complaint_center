@@ -63,6 +63,16 @@
 				android:text="Forgot Password"/>
 			
 			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginHorizontal="25dp"
+				android:layout_marginVertical="3dp"
+				android:id="@+id/btn_register"
+				android:textAlignment="center"
+				android:background="@drawable/btn_ripple"
+				android:text="Register account"/>
+			
+			<Button
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:text="credit"

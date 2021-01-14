@@ -17,7 +17,8 @@
 		android:roundIcon="@mipmap/logo"
 		android:supportsRtl="true"
 		android:theme="@style/Theme.AIOUComplaintCenter">
-		<activity android:name=".ResetPassword"></activity>
+		<activity android:name=".Register_Acc"></activity>
+		<activity android:name=".ResetPassword" />
 		<activity android:name=".SearchRecord" />
 		<activity android:name=".Report" />
 		<activity android:name=".Credit" />
