@@ -1,28 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	tools:context=".Report">
 	
+<!--
 	<ScrollView
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:layout_centerInParent="true"
 		>
+-->
+
 		
 		<LinearLayout
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
 			android:orientation="vertical"
+			android:layout_gravity="center"
 			android:padding="25dp">
+			
+<!--			<include layout="@layout/logo"/>-->
+			
+			<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="300dp"
+				android:src="@drawable/aiou_cc_fn_w_o_credits"
+				android:id="@+id/logo"/>
 			
 			<EditText
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:hint="Registration Number"
-				android:layout_marginVertical="25dp"
+				android:layout_marginVertical="5dp"
 				android:id="@+id/txtRegNum"
 				android:focusableInTouchMode="true"
 				android:focusable="true"
@@ -36,7 +48,7 @@
 			<EditText
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:layout_marginVertical="25dp"
+				android:layout_marginVertical="5dp"
 				android:hint="Roll Number"
 				android:id="@+id/txtRollNum"
 				android:maxLength="8"
@@ -52,7 +64,7 @@
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:hint="Title Your Issue"
-				android:layout_marginVertical="25dp"
+				android:layout_marginVertical="5dp"
 				android:id="@+id/txtTitle"
 				android:focusableInTouchMode="true"
 				android:focusable="true"
@@ -66,7 +78,7 @@
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:hint="State Your Issue"
-				android:layout_marginVertical="25dp"
+				android:layout_marginVertical="5dp"
 				android:id="@+id/txtProblem"
 				android:focusableInTouchMode="true"
 				android:focusable="true"
@@ -79,7 +91,7 @@
 			<Button
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:layout_marginVertical="25dp"
+				android:layout_marginVertical="5dp"
 				android:text="report"
 				android:textSize="24dp"
 				android:textAlignment="center"
@@ -88,6 +100,6 @@
 			
 		</LinearLayout>
 		
-	</ScrollView>
+<!--	</ScrollView>-->
 
-</RelativeLayout>
+</ScrollView>

@@ -65,12 +65,12 @@ public class MainActivity extends AppCompatActivity {
 		
 		mAuth = FirebaseAuth.getInstance();
 		
-		btnCredit.setOnClickListener(new View.OnClickListener() {
+		/*btnCredit.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(getApplicationContext(),Credit.class));
 			}
-		});
+		});*/
 		
 //		if (mAuth.getCurrentUser() != null) {
 //
@@ -165,7 +165,7 @@ public class MainActivity extends AppCompatActivity {
 		btnResetPassword = findViewById(R.id.btn_reset);
 		
 		btnLogin = findViewById(R.id.btnLogin);
-		btnCredit = findViewById(R.id.btnCredits);
+//		btnCredit = findViewById(R.id.btnCredits);
 		btnRegAcc = findViewById(R.id.btn_register);
 	}
 	

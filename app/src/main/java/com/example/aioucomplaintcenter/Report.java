@@ -51,7 +51,8 @@ public class Report extends AppCompatActivity {
 		super.onCreate(savedInstanceState);
 //		sEmail = "aioucomplaintcenter@gmail.com";
 //		sPsd = "X48n6W6eNg9q3XC";
-		strMailTo = "baqar.hussain@aiou.edu.pk";
+//		strMailTo = "baqar.hussain@aiou.edu.pk";
+		strMailTo = "abdulroufsidhu@gmail.com";
 		
 		setContentView(R.layout.activity_report);
 		
@@ -92,13 +93,16 @@ public class Report extends AppCompatActivity {
 											case "phn_number": {
 												strPhnNumber = data.getValue().toString().trim();
 											} case "reg_number": {
-												if (data.getValue().toString().equals(strRegNum.toLowerCase())) {
-													regCnfrm = true;
-												}
+//												if (data.getValue().toString().equals(strRegNum.toLowerCase())) {
+//													regCnfrm = true;
+													regCnfrm = data.getValue().toString().equals(strRegNum.toLowerCase());
+													
+//												}
 											} case "roll_number": {
-												if (data.getValue().toString().equals(strRollNum.toLowerCase())) {
-													rollCnfrm = true;
-												}
+//												if (data.getValue().toString().equals(strRollNum.toLowerCase())) {
+//													rollCnfrm = true;
+													rollCnfrm = data.getValue().toString().equals(strRollNum.toLowerCase());
+//												}
 											} case "name": {
 												strStdName = data.getValue().toString().trim();
 											}
@@ -119,7 +123,7 @@ public class Report extends AppCompatActivity {
 												public void onDataChange(@NonNull DataSnapshot snapshot) {
 													
 													long instance = snapshot.getChildrenCount();
-
+													
 													issueIndex = (byte) (instance +1);
 													
 													sendEmail();
@@ -180,7 +184,7 @@ public class Report extends AppCompatActivity {
 	
 	private void sendEmail() {
 		
-		JavaMailAPI javaMailAPI = new JavaMailAPI(this, strMailTo , strRollNum + "-" + issueIndex + "(" + strTitle + ")",
+		JavaMailAPI javaMailAPI = new JavaMailAPI(this, strMailTo , strRegNum + "-" + strRollNum + "-" + issueIndex + "(" + strTitle + ")",
 				"Your student "+strStdName + "\nwith email "
 				+currentUser.getEmail() + "\nwith user id in database "
 				+ currentUser.getUid()

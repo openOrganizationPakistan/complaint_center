@@ -4,7 +4,7 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	tools:context=".MainActivity">
-
+	
 		<LinearLayout
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
@@ -12,12 +12,13 @@
 			android:paddingHorizontal="25dp"
 			android:padding="25dp">
 
+<!--			<include layout="@layout/logo"/>-->
 			<ImageView
 				android:layout_width="match_parent"
 				android:layout_height="300dp"
-				android:src="@drawable/aiou_cc_fn"
+				android:src="@drawable/aiou_cc_fn_w_o_credits"
 				android:id="@+id/logo"/>
-
+			
 			<EditText
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
@@ -28,7 +29,9 @@
 				android:id="@+id/txtEmail"
 				android:textAlignment="center"
 				android:background="@drawable/bg_round"
-				android:layout_margin="25dp"/>
+				android:layout_marginHorizontal="25dp"
+				android:layout_marginVertical="5dp"
+				/>
 			
 			<EditText
 				android:layout_width="match_parent"
@@ -40,13 +43,16 @@
 				android:textSize="24dp"
 				android:textAlignment="center"
 				android:background="@drawable/bg_round"
-				android:layout_margin="25dp"/>
+				android:layout_marginHorizontal="25dp"
+				android:layout_marginVertical="5dp"
+				/>
 			
 			<Button
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:layout_marginHorizontal="25dp"
-				android:layout_marginVertical="3dp"
+				android:layout_marginBottom="3dp"
+				android:layout_marginTop="15dp"
 				android:id="@+id/btnLogin"
 				android:textAlignment="center"
 				android:background="@drawable/btn_ripple"
@@ -72,6 +78,7 @@
 				android:background="@drawable/btn_ripple"
 				android:text="Register account"/>
 			
+<!--
 			<Button
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
@@ -82,7 +89,8 @@
 				android:layout_marginHorizontal="25dp"
 				android:background="@drawable/btn_ripple"
 				android:id="@+id/btnCredits"/>
-			
+-->
+		
 		</LinearLayout>
 		
 		

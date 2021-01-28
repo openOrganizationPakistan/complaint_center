@@ -1,19 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	tools:context=".OperationSelection">
 
+	<!--
 	<ScrollView
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:layout_centerInParent="true">
+	-->
 		
-		<RelativeLayout
+		
+		<LinearLayout
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
-			android:padding="25dp">
+			android:padding="25dp"
+			android:layout_gravity="center"
+			android:orientation="vertical"
+			>
+			
+<!--			<include layout="@layout/logo"/>-->
+			
+			<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="300dp"
+				android:src="@drawable/aiou_cc_fn_w_o_credits"
+				android:id="@+id/logo"/>
 			
 			<Button
 				android:layout_width="match_parent"
@@ -23,18 +37,19 @@
 				android:textSize="24dp"
 				android:textAlignment="center"
 				android:background="@drawable/btn_ripple"
-				android:layout_margin="25dp"/>
+				android:layout_marginVertical="5dp"
+				android:layout_marginHorizontal="25dp"/>
 			
 			<Button
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:text="search records"
-				android:layout_below="@+id/btnReport"
 				android:textSize="24dp"
 				android:textAlignment="center"
 				android:background="@drawable/btn_ripple"
 				android:id="@+id/btnSearchRecords"
-				android:layout_margin="25dp"/>
+				android:layout_marginVertical="5dp"
+				android:layout_marginHorizontal="25dp"/>
 			
 			<Button
 				android:layout_width="match_parent"
@@ -42,13 +57,13 @@
 				android:textSize="24dp"
 				android:textAlignment="center"
 				android:background="@drawable/btn_ripple"
-				android:layout_below="@id/btnSearchRecords"
-				android:layout_margin="25dp"
+				android:layout_marginHorizontal="25dp"
+				android:layout_marginVertical="5dp"
 				android:text="sign out"
 				android:id="@+id/btnSignOut"/>
 			
-		</RelativeLayout>
+		</LinearLayout>
 		
-	</ScrollView>
+<!--	</ScrollView>-->
 	
-</RelativeLayout>
+</ScrollView>

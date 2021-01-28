@@ -10,14 +10,17 @@
 	<LinearLayout
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:orientation="vertical">
+		android:gravity="center_vertical"
+		android:orientation="vertical"
+		>
+		
+<!--		<include layout="@layout/logo"/>-->
 		
 		<ImageView
-			android:layout_width="280dp"
-			android:layout_height="280dp"
-			android:layout_gravity="center_horizontal"
-			android:src="@drawable/aiou_cc_fn"
-			android:layout_margin="5dp"/>
+			android:layout_width="match_parent"
+			android:layout_height="300dp"
+			android:src="@drawable/aiou_cc_fn_w_o_credits"
+			android:id="@+id/logo"/>
 		
 		<LinearLayout
 			android:layout_width="wrap_content"
