@@ -30,6 +30,16 @@
 			android:background="@drawable/bg_round"
 			android:padding="25dp">
 			
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="warning !!\nensure to use your original credentials so that your complain can be verified and you will need roll number and registeration number every time you send query to university's official.\n"
+				android:textAlignment="center"
+				android:background="@drawable/bg_transparent"
+				android:textSize="10dp"
+				android:textColor="#FF0000"
+				android:textStyle="bold"
+				/>
 			
 			<EditText
 				android:layout_width="220dp"
